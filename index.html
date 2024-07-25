@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Navigation</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .nav-button {
+            display: block;
+            width: 80%;
+            max-width: 250px;
+            margin: 10px auto;
+            padding: 15px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .nav-button:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="nav-button" onclick="location.href='file:///C:/Users/yuusu/Desktop/自分用HP/各ファイル/seijinkai/当直点検項目巡回夜.html'">夜</button>
+        <button class="nav-button" onclick="location.href='file:///C:/Users/yuusu/Desktop/%E8%87%AA%E5%88%86%E7%94%A8HP/%E5%90%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB/%E5%AD%A6%E5%9C%92%E8%AD%A6%E5%91%8A/%E5%AD%A6%E5%9C%92%E5%91%8A%E7%9F%A5.html'">朝</button>
+    </div>
+</body>
+</html>
