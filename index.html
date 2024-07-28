@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Navigation</title>
+    <title>成仁会病院当直バイト 点検項目</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
         body {
             font-family: 'Roboto', sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -17,6 +20,17 @@
 
         .container {
             text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
         }
 
         .nav-button {
@@ -48,8 +62,10 @@
 </head>
 <body>
     <div class="container">
-        <button class="nav-button" onclick="location.href='当直点検項目巡回夜.html'">夜</button>
-        <button class="nav-button" onclick="location.href='toutyoku_asa.html '">朝</button>
+        <img src="logo.png" alt="成仁会病院ロゴ" class="logo">
+        <h1>成仁会病院当直バイト 点検項目</h1>
+        <button class="nav-button" onclick="location.href='当直点検項目巡回夜.html'">夜の点検</button>
+        <button class="nav-button" onclick="location.href='toutyoku_asa.html'">朝の点検</button>
     </div>
 </body>
 </html>
