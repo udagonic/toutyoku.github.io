@@ -6,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // シンプルなハードコードされた認証
-    const validUsername = 'user';
-    const validPassword = 'password';
+    const validUsername = 'seijinkai';
+    const validPassword = 'jimutoutyokou';
 
     if (username === validUsername && password === validPassword) {
         document.getElementById('message').textContent = 'ログイン成功！';
