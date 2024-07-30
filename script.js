@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -12,8 +11,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (username === validUsername && password === validPassword) {
         document.getElementById('message').textContent = 'ログイン成功！';
         document.getElementById('message').style.color = 'green';
-        // ここでリダイレクトや次のアクションを実行できます
+        // main.htmlに遷移
+        window.location.href = 'main.html';
     } else {
         document.getElementById('message').textContent = 'ユーザー名またはパスワードが正しくありません。';
+        document.getElementById('message').style.color = 'red';
     }
 });
