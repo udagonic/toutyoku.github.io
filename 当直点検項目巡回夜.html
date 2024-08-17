@@ -45,7 +45,6 @@
         window.addEventListener('beforeunload', function (e) {
             e.preventDefault();
             e.returnValue = '入力したデータが消えてしまいますが、よろしいですか？';
-            return e.returnValue;
         });
     </script>
 </head>
@@ -77,42 +76,48 @@
         <input type="checkbox" id="option21" value="21"> <label for="option21">操作室施錠</label><br>
         <input type="checkbox" id="option22" value="22"> <label for="option22">CT撮影室施錠</label><br>
         <input type="checkbox" id="option23" value="23"> <label for="option23">1階～5階までの窓</label><br>
+
         <h3>【5階】</h3>
         <input type="checkbox" id="option24" value="24"> <label for="option24">倉庫施錠</label><br>
         <input type="checkbox" id="option25" value="25"> <label for="option25">部長室施錠</label><br>
-        <input type="checkbox" id="option27" value="27"> <label for="option27">リハビリ室（施錠しない）</label><br>
+        <input type="checkbox" id="option26" value="26"> <label for="option26">リハビリ室（施錠しない）</label><br>
         <input type="checkbox" id="option27" value="27"> <label for="option27">リハビリ室窓施錠</label><br>
-        <input type="checkbox" id="option27" value="27"> <label for="option27">院長室施錠</label><br>
-        <input type="checkbox" id="option28" value="28"> <label for="option28">第2医局（施錠しない）</label><br>
-        <input type="checkbox" id="option29" value="29"> <label for="option29">ベランダ閉錠【東・西２箇所】</label><br>
+        <input type="checkbox" id="option28" value="28"> <label for="option28">院長室施錠</label><br>
+        <input type="checkbox" id="option29" value="29"> <label for="option29">第2医局（施錠しない）</label><br>
+        <input type="checkbox" id="option30" value="30"> <label for="option30">ベランダ閉錠【東・西２箇所】</label><br>
+
         <h3>【4階】</h3>
-        <input type="checkbox" id="option30" value="30"> <label for="option30">医薬品情報室</label><br>
-        <input type="checkbox" id="option31" value="31"> <label for="option31">浴室施錠</label><br>
-        <input type="checkbox" id="option32" value="32"> <label for="option32">4階～3階の窓</label><br>
+        <input type="checkbox" id="option31" value="31"> <label for="option31">医薬品情報室</label><br>
+        <input type="checkbox" id="option32" value="32"> <label for="option32">浴室施錠</label><br>
+        <input type="checkbox" id="option33" value="33"> <label for="option33">4階～3階の窓</label><br>
+
         <h3>【3階】</h3>
-        <input type="checkbox" id="option33" value="33"> <label for="option33">3階～2階の窓</label><br>
+        <input type="checkbox" id="option34" value="34"> <label for="option34">3階～2階の窓</label><br>
+
         <h3>【2階】</h3>
-        <input type="checkbox" id="option34" value="34"> <label for="option34">厨房（2カ所）施錠</label><br>
-        <input type="checkbox" id="option35" value="35"> <label for="option35">栄養士室施錠</label><br>
-        <input type="checkbox" id="option36" value="36"> <label for="option36">食品倉庫施錠</label><br>
-        <input type="checkbox" id="option27" value="27"> <label for="option27">当直室（施錠しない）</label><br>
-        <input type="checkbox" id="option27" value="27"> <label for="option27">医局（施錠しない）</label><br>
-        <input type="checkbox" id="option37" value="37"> <label for="option37">2F事務所施錠</label><br>
-        <input type="checkbox" id="option38" value="38"> <label for="option38">第2X線撮影室施錠</label><br>
-        <input type="checkbox" id="option39" value="39"> <label for="option39">X線操作室施錠</label><br>
+        <input type="checkbox" id="option35" value="35"> <label for="option35">厨房（2カ所）施錠</label><br>
+        <input type="checkbox" id="option36" value="36"> <label for="option36">栄養士室施錠</label><br>
+        <input type="checkbox" id="option37" value="37"> <label for="option37">食品倉庫施錠</label><br>
+        <input type="checkbox" id="option38" value="38"> <label for="option38">当直室（施錠しない）</label><br>
+        <input type="checkbox" id="option39" value="39"> <label for="option39">医局（施錠しない）</label><br>
+        <input type="checkbox" id="option40" value="40"> <label for="option40">2F事務所施錠</label><br>
+        <input type="checkbox" id="option41" value="41"> <label for="option41">第2X線撮影室施錠</label><br>
+        <input type="checkbox" id="option42" value="42"> <label for="option42">X線操作室施錠</label><br>
+
         <h2>【22時】</h2>
         <h3>【2階】</h3>
-        <input type="checkbox" id="option40" value="40"> <label for="option40">食堂ドア施錠（22時）</label><br>
-        <input type="checkbox" id="option41" value="41"> <label for="option41">食堂窓施錠（22時）</label><br>
-        <input type="checkbox" id="option42" value="42"> <label for="option42">食堂エアコンOFF（22時）</label><br>
-        <h2>【23時】</h2>
-        <h3>【4階】</h3>
-        <input type="checkbox" id="option43" value="43"> <label for="option43">ボイラ室・電源OFF（23時）</label><br>
-        <input type="checkbox" id="option44" value="44"> <label for="option44">ボイラ室横・給湯器電源OFF</label><br>
+        <input type="checkbox" id="option43" value="43"> <label for="option43">食堂ドア施錠（22時）</label><br>
+        <input type="checkbox" id="option44" value="44"> <label for="option44">事務所内施錠（22時）</label><br>
+        <input type="checkbox" id="option45" value="45"> <label for="option45">薬剤部施錠（22時）</label><br>
     </div>
-    <a href="1F電源オン.jpg" target="_blank">操作室PC（写真）</a> 
-    <a href="1F追加PC.jpg" target="_blank">操作室追加PC（写真）</a>
-     <a href="2F撮影室.jpg" target="_blank">2F撮影室PC（写真）</a>
 
+    <div class="container">
+        <h2>関連リンク</h2>
+        <ul>
+            <li><a href="1F電源オン.jpg" target="_blank">1F電源オン</a></li>
+            <li><a href="5F施錠確認.jpg" target="_blank">5F施錠確認</a></li>
+            <li><a href="3F施錠確認.jpg" target="_blank">3F施錠確認</a></li>
+        </ul>
+    </div>
 </body>
 </html>
