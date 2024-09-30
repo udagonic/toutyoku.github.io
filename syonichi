@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>事務当直　点検項目</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+
+            background-color: #f8f8f8;
+
+            color: #333;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            color: #ff69b4;
+
+        }
+
+        h2 {
+
+            color: #ba55d3;
+
+        }
+
+        h3 {
+
+            color: #20b2aa;
+
+        }
+
+        input[type="checkbox"] {
+
+            margin-right: 10px;
+
+        }
+
+        input[type="checkbox"]:checked + label {
+
+            text-decoration: line-through;
+
+            color: #808080;
+
+        }
+
+        input[type="checkbox"] {
+
+        /* チェックボックスを1.5倍の大きさに拡大 */
+
+        transform: scale(1.5);
+
+        /* チェックボックスとテキストの位置を中央揃えに */
+
+        vertical-align: middle;
+
+        margin: 5px;
+
+        }
+
+        label {
+
+            cursor: pointer;
+
+        }
+
+        .container {
+
+            background-color: #fff;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+            padding: 20px;
+
+            margin-bottom: 20px;
+
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('beforeunload', function (e) {
+
+          // キャンセルイベントを設定
+
+          e.preventDefault();
+
+          // ChromeではreturnValueを設定する必要がある
+
+          e.returnValue = '入力したデータが消えてしまいますが、よろしいですか？';
+
+          // このメッセージは一部のブラウザでユーザーに表示される
+
+          return e.returnValue;
+
+        });
+
+      </script>
+
+      
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>朝　点検項目</h1>
+
+        <!-- 以下の内容を繰り返します -->
+
+        <h2>※休みの日は●のみ</h2>
+
+        <h3>【１階】</h3>
+
+         <input type="checkbox" id="option1"name="option1" value="1"> <label for="option1">裏口施錠確認</label><br>
+
+        <h3>【5階】</h3>
+         <input type="checkbox" id="option29name="option29" value=29"><label for="option29">ベランダ解錠【東・西2カ所】</label><br>
+
+         <input type="checkbox" id="option24name="option24" value=24"><label for="option24">院長室解錠【平日のみ】</label><br>
+
+
+        <h3>【4階】</h3>
+
+         <input type="checkbox" id="option30name="option30" value=30"><label for="option30">医薬品情報室解錠</label><br>
+
+         <input type="checkbox" id="option31name="option31" value=31"><label for="option31">●ボイラ室・電源ON（6時）</label><br>
+
+         <input type="checkbox" id="option32name="option32" value=32"><label for="option32">●ボイラ室横給湯器電源ON（6時）</label><br>
+
+        <h3>【2階】</h3>
+
+         <input type="checkbox" id="option37name="option37" value=37"><label for="option37">2F事務所解錠</label><br>
+
+         <input type="checkbox" id="option39name="option39" value=39"><label for="option39">X線操作室解錠【PC電源ON】</label><br>
+        
+         <input type="checkbox" id="option38name="option38" value=38"><label for="option38">第2X線撮影室解錠</label><br>
+
+        <h3>【1階】</h3>
+
+         <input type="checkbox" id="option40name="option40" value=40"><label for="option40">薬品倉庫解錠</label><br>
+
+         <input type="checkbox" id="option41name="option41" value=41"><label for="option41">薬局解錠</label><br>
+
+
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">●事務所解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">第1診察室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">処置室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">第3診察室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">中央材料室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">第1X線撮影室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">操作室解錠【PC電源ON】</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">CT撮影室解錠</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">検査室解錠（トイレ側）</label><br>
+         <input type="checkbox" id="option42name="option42" value=42"><label for="option42">●玄関解錠(7：00)</label><br>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
+
