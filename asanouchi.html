@@ -1,1 +1,156 @@
 
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>事務当直　点検項目</title>
+
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+
+            background-color: #f8f8f8;
+
+            color: #333;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            color: #ff69b4;
+
+        }
+
+        h2 {
+
+            color: #ba55d3;
+
+        }
+
+        h3 {
+
+            color: #20b2aa;
+
+        }
+
+        input[type="checkbox"] {
+
+            margin-right: 10px;
+
+        }
+
+        input[type="checkbox"]:checked + label {
+
+            text-decoration: line-through;
+
+            color: #808080;
+
+        }
+
+        input[type="checkbox"] {
+
+        /* チェックボックスを1.5倍の大きさに拡大 */
+
+        transform: scale(1.5);
+
+        /* チェックボックスとテキストの位置を中央揃えに */
+
+        vertical-align: middle;
+
+        margin: 5px;
+
+        }
+
+        label {
+
+            cursor: pointer;
+
+        }
+
+        .container {
+
+            background-color: #fff;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+            padding: 20px;
+
+            margin-bottom: 20px;
+
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('beforeunload', function (e) {
+
+          // キャンセルイベントを設定
+
+          e.preventDefault();
+
+          // ChromeではreturnValueを設定する必要がある
+
+          e.returnValue = '入力したデータが消えてしまいますが、よろしいですか？';
+
+          // このメッセージは一部のブラウザでユーザーに表示される
+
+          return e.returnValue;
+
+        });
+
+      </script>
+
+      
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>寝る前のチェック項目</h1>
+
+        <!-- 以下の内容を繰り返します -->
+
+        <h2></h2>
+
+        <h3></h3>
+        <input type="checkbox" id="option37" name="option37" value="37">
+        <label for="option37">起床時に布団をしまう。</label><br>
+        
+        <input type="checkbox" id="option1" name="option1" value="1">
+        <label for="option1">解錠・巡回</label><br>
+
+        <input type="checkbox" id="option30" name="option30" value="30">
+        <label for="option30">当直日誌に記入</label><br>
+
+        <input type="checkbox" id="option45" name="option45" value="45">
+        <label for="option45">玄関解錠時に玄関に掲示している電話番号の札を下げる。</label><br>
+
+        <input type="checkbox" id="option39" name="option39" value="39">
+        <label for="option39">テレビ・デジタルサイネージ・陰圧装置をつける。（午前診がある日のみ）</label><br>
+        
+        <input type="checkbox" id="option38" name="option38" value="38">
+        <label for="option38">当直日誌に点検内容をチェックする。</label><br>
+        
+
+
+    </div>
+
+
+</body>
+
+</html>
+
